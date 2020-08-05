@@ -2,14 +2,3 @@
     margin: 0;
     padding: 0;
 }
-
-.fundo{
-    background-image: linear-gradient(to left, #f8b4d7 25%, #fbd897 90%);
-    height: calc(100vh - 145px);
-    width: 100vw;
-}
-
-.img{
-    width: 588.24px;
-    height: 140.78px;
-}

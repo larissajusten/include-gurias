@@ -1,18 +1,29 @@
 import React, { Component } from 'react'
-import styles from './App.module.css';
 import Header from './Components/Header/Header';
-import image from "./Components/images/DesignHome.png";
+import Home from './Pages/Home/Home';
+import Projeto from "./Pages/Projeto/Projeto";
 
 export default class App extends Component {
+    
+    constructor(props) {
+        super(props);
+        
+        this.state ={
+            selectedPage: 0
+        }
+    }
+    
+    componentDidMount(){
+
+    }
+
     render() {
         return(
-            <div className = "col-md">
-                <div className = "row-md">
-                    <Header/>
-                </div>
-                <div className = "row-md text-center" style={{backgroundColor: "red"}}>
-                    <div className={styles.fundo}>
-                        <img src={image} className={styles.img}></img>
+            <div className="row-md-12">
+                <div style={{backgroundColor: "yellow"}}>
+                    <div className="col-sm-12 col-md-12">
+                        <Header/>
+                        {this.state.selectedPage == 0 ? <Home/> : <Projeto/>}
                     </div>
                 </div>
             </div>
