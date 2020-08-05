@@ -1,5 +1,5 @@
 .header{
-    background-color: white;
+    background: #E5E5E5;
 }
 
 .logo{
@@ -9,8 +9,9 @@
 }
 
 .buttonHeaderSelected{
+    font-family: Bellerose Light;
     padding: 10px;
-    color: rgb(173, 22, 105);
+    color: #CC3366;
     font-weight: 500;
     font-size: 31px;
     /**background-color: rgb(235, 222, 222);**/
@@ -20,8 +21,8 @@
 }
 
 .buttonHeaderNotSelected{
-    padding: 10px;
-    color: rgb(173, 22, 105);
+    font-family: Bellerose Light;
+    color: #CC3366;
     font-weight: 500;
     font-size: 23.5px;
     text-align: center;
@@ -29,8 +30,9 @@
 }
 
 .buttonHeaderNotSelected:hover{
+    font-family: Bellerose Light;
     padding: 10px;
-    color: rgb(173, 22, 105);
+    color: #CC3366;
     font-weight: 500;
     font-size: 31px;
     background-color: rgb(235, 222, 222);
