@@ -17,13 +17,15 @@ export default class Header extends Component {
         this.setState({
             selectedPage: index
         });
+
+        this.props.trocaPagina(index);
     }
     
     render() {
         return (
             <header className="row" style={{backgroundColor: "white"}}>
                 <div className="col-md text-center"> 
-                    <img src={image} className={styles.logo}></img>
+                    <img src={image} className={styles.logo} alt="Include Gurias"/>
                 </div>
                 <div className="col-md" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 0 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected} onClick={()=>{this.onClick(0)}}> 

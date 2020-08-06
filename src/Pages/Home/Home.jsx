@@ -5,13 +5,13 @@ export default class Home extends Component {
     
     render() {
         return (
-            <body className="row">
-                <div className={styles.fundo}>
+            <div className="row">
+                <div className={styles.background}>
                     <div className={styles.centerImage}>
-                        <img src={image} className={styles.img} media="screen and (min-width: 340px)"></img>
+                        <img src={image} className={styles.img} media="screen and (min-width: 340px)" alt="Include Gurias"/>
                     </div>
                 </div>
-            </body>
+            </div>
         )
     }
 }
