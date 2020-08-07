@@ -13,4 +13,30 @@
 .img{
     width: 588.24px;
     height: 140.78px;
+} 
+
+.instagramLogo{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
 }
+
+.facebookLogo{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
+.linkedinLogo{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.youtubeLogo{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+}
+
