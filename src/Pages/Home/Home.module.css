@@ -16,27 +16,31 @@
 } 
 
 .instagramLogo{
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 .facebookLogo{
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 
 .linkedinLogo{
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 .youtubeLogo{
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
