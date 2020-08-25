@@ -19,11 +19,17 @@ export default class Header extends Component {
         });
 
         this.props.trocaPagina(index);
+        
+        if(index === 0){
+            this.props.scrollTo(0, 0);
+        }else if(index === 1){
+            this.props.scrollTo(0, 800);
+        }
     }
     
     render() {
         return (
-            <header className="row" style={{backgroundColor: "white"}}>
+            <header className={"row " + styles.header}>
                 <div className="col-md text-center"> 
                     <img src={image} className={styles.logo} alt="Include Gurias"/>
                 </div>

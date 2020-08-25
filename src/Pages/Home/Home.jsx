@@ -19,13 +19,13 @@ export default class Home extends Component {
                         <div className="row ">
                             <div className="col-sm-12 col-md-1" style={{paddingTop: "272px"}}>
                                 <div className="row-md-3 d-flex justify-content-center">
-                                    <img src={instagram} className={styles.instagramLogo} onClick={()=>{this.goToNewTab("https://www.instagram.com/include.gurias/?hl=pt-br")}}></img>
+                                    <img src={instagram} className={styles.instagramLogo} alt="" onClick={()=>{this.goToNewTab("https://www.instagram.com/include.gurias/?hl=pt-br")}}></img>
                                 </div>
                                 <div className="row-md-3 d-flex justify-content-center">
-                                    <img src={facebook} className={styles.facebookLogo} onClick={()=>{this.goToNewTab("https://www.facebook.com/include.GURIAS/?view_public_for=166605734213202")}}></img>
+                                    <img src={facebook} className={styles.facebookLogo} alt="" onClick={()=>{this.goToNewTab("https://www.facebook.com/include.GURIAS/?view_public_for=166605734213202")}}></img>
                                 </div>
                                 <div className="row-md-3 d-flex justify-content-center">
-                                    <img src={linkedin} className={styles.linkedinLogo} onClick={()=>{this.goToNewTab("https://www.linkedin.com/company/includegurias/?viewAsMember=true")}}></img>
+                                    <img src={linkedin} className={styles.linkedinLogo} alt="" onClick={()=>{this.goToNewTab("https://www.linkedin.com/company/includegurias/?viewAsMember=true")}}></img>
                                 </div>
                                 <div className="row-md-3 d-flex justify-content-center">
                                     <img src={youtube} className={styles.youtubeLogo} alt="youtube"/>

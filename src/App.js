@@ -22,9 +22,13 @@ export default class App extends Component {
             selectedPage: index
         });
     }
+
+    scrollTo(x, y) { 
+        window.scrollTo(x, y)
+    }
     
     componentDidMount(){
-
+        
     }
 
     render() {
@@ -32,12 +36,13 @@ export default class App extends Component {
             <div className="row-md-12">
                 <div style={{backgroundColor: "yellow"}}>
                     <div className="col-sm-12 col-md-12">
-                        <Header trocaPagina={this.trocaPagina} />
+                        <Header trocaPagina={this.trocaPagina} scrollTo={this.scrollTo}/>
                         {   
-                            this.state.selectedPage === 0 
-                            ? <Home/> 
-                            : this.state.selectedPage === 1 
-                            ? <Projeto/>
+                            (this.state.selectedPage === 0 ||this.state.selectedPage === 1) ?
+                                <div>
+                                    <Home/> 
+                                    <Projeto/>
+                                </div>    
                             : this.state.selectedPage === 2
                             ? <Representatividade/>
                             : this.state.selectedPage === 3

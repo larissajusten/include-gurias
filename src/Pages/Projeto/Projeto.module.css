@@ -1,5 +1,5 @@
 .background{
     background-image: linear-gradient(to left, #fcc3e0 25%, #fae4bb 90%);
-    height: calc(100vh - 145px);
+    height: 100vh;
     width: 100vw;
 }
