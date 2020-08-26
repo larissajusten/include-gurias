@@ -21,9 +21,9 @@ export default class Header extends Component {
         this.props.trocaPagina(index);
         
         if(index === 0){
-            this.props.scrollTo(0, 0);
+            this.props.scrollTo({ y: 0, smooth: true});
         }else if(index === 1){
-            this.props.scrollTo(0, 800);
+            this.props.scrollTo({ y: 1100, smooth: true });
         }
     }
     
