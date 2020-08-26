@@ -29,7 +29,7 @@ export default class Header extends Component {
     
     render() {
         return (
-            <header className={"row " + styles.header}>
+            <div className={"row fixed-top " + styles.header}>
                 <div className="col-md text-center"> 
                     <img src={image} className={styles.logo} alt="Include Gurias"/>
                 </div>
@@ -63,7 +63,7 @@ export default class Header extends Component {
                         Contato
                     </div>
                 </div>
-            </header>
+            </div>
         );
     }
 }

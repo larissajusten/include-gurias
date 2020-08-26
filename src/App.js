@@ -25,17 +25,13 @@ export default class App extends Component {
         });
     }
 
-    scrollTo = (x, y) => { 
-        
-    }
-    
     componentDidMount(){
         
     }
 
     render() {
         return(
-            <body className={styles.over + " row-md-12"}>
+            <body className={styles.over + " row-md-12 "}>
                 <div>
                     <div className="col-sm-12 col-md-12">
                         <ScrollTo >
