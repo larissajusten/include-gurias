@@ -26,6 +26,32 @@ export default class Header extends Component {
             this.props.scrollTo({ y: 1100, smooth: true });
         }
     }
+
+    listenToScroll = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        const scrolled = winScroll / height;
+
+        if(scrolled < 0.5){
+            this.setState({
+                selectedPage: 0
+            });
+        }else{
+            this.setState({
+                selectedPage: 1
+            });
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenToScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.listenToScroll)
+    }
     
     render() {
         return (
