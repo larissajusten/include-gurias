@@ -10,11 +10,13 @@
 
 .buttonHeaderSelected{
     font-family: Bellerose Light;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
     color: #CC3366;
     font-weight: 500;
     font-size: 31px;
-    /**background-color: rgb(235, 222, 222);**/
+    background-color: rgb(247, 217, 217);
     text-align: center;
     border-radius: 30px;
     cursor: default;
@@ -31,7 +33,9 @@
 
 .buttonHeaderNotSelected:hover{
     font-family: Bellerose Light;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
     color: #CC3366;
     font-weight: 500;
     font-size: 31px;

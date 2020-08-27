@@ -7,7 +7,7 @@ export default class Home extends Component {
         return (
             <div className="row">
                 <div className={styles.background}>
-                    Projeto
+                    
                 </div>
             </div>
         )

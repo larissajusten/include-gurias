@@ -17,7 +17,7 @@ export default class Home extends Component {
                 <div className={styles.background}>
                     <div className="col-sm-12 col-md-12 align-self-center">
                         <div className="row ">
-                            <div className="col-sm-12 col-md-1" style={{paddingTop: "272px"}}>
+                            <div className="col-sm-12 col-md-1 fixed-top" style={{paddingTop: "400px"}}>
                                 <div className="row-md-3 d-flex justify-content-center">
                                     <img src={instagram} className={styles.instagramLogo} alt="" onClick={()=>{this.goToNewTab("https://www.instagram.com/include.gurias/?hl=pt-br")}}></img>
                                 </div>
@@ -31,7 +31,7 @@ export default class Home extends Component {
                                     <img src={youtube} className={styles.youtubeLogo} alt="youtube"/>
                                 </div>
                             </div>
-                            <div className="col-sm-12 col-md-10 " style={{paddingTop: "294px"}}>
+                            <div className="col-sm-12 col-md-10 " style={{paddingTop: "410px", paddingLeft: "350px"}}>
                                 <div className="row-md-12 d-flex justify-content-center">
                                     <img src={image} className={styles.img} alt="Include Gurias"/>
                                 </div>

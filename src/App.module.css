@@ -6,3 +6,11 @@
 .over{
     overflow: hidden;
 }
+
+.oculta{
+    opacity: 0;
+}
+
+.mostra{
+    opacity: 1;
+}
