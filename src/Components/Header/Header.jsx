@@ -7,7 +7,8 @@ export default class Header extends Component {
         super(props)
     
         this.state = {
-            selectedPage: 0
+            selectedPage: 0,
+            currentPage: 0
         };
 
         this.onClick = this.onClick.bind(this);
@@ -20,27 +21,34 @@ export default class Header extends Component {
 
         this.props.trocaPagina(index);
         
-        if(index === 0){
-            this.props.scrollTo({ y: 0, smooth: true});
-        }else if(index === 1){
-            this.props.scrollTo({ y: 1100, smooth: true });
+        if(index === 1 && this.state.currentPage === 0){
+            this.props.scrollTo({ y: 805, smooth: true});    
+        }else if(index === 1 && this.state.currentPage !==0){
+            setTimeout(() => {
+                this.props.scrollTo({ y: 805, smooth: true});        
+            }, 100);
+        }else{
+            this.props.scrollTo({ y: 0, smooth: true});    
         }
+        
+        this.setState({
+            currentPage: index
+        });
     }
 
     listenToScroll = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        console.log("andei : " + winScroll);
 
-        const scrolled = winScroll / height;
-
-        if(scrolled < 0.5){
-            this.setState({
-                selectedPage: 0
-            });
-        }else{
+        if(winScroll >= 805){
             this.setState({
                 selectedPage: 1
+            });
+        }
+        if(winScroll < 805 && this.state.selectedPage === 1){
+            this.setState({
+                selectedPage: 0
             });
         }
     }
@@ -59,32 +67,32 @@ export default class Header extends Component {
                 <div className="col-md text-center"> 
                     <img src={image} className={styles.logo} alt="Include Gurias"/>
                 </div>
-                <div className="col-md" style={{alignSelf: "center", paddingTop: "40px"}}>
+                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 0 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected} onClick={()=>{this.onClick(0)}}> 
                         Home 
                     </div>
                 </div>
-                <div className="col-md" style={{alignSelf: "center", paddingTop: "40px"}}>
+                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 1 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(1)}}>
                         Projeto
                     </div>
                 </div>
-                <div className="col-md-2" style={{alignSelf: "center", paddingTop: "40px"}}>
+                <div className="col-md-2 user-select-none" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 2 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(2)}}>
                         Representatividade
                     </div>
                 </div>
-                <div className="col-md" style={{alignSelf: "center", paddingTop: "40px"}}>
+                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 3 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(3)}}>
                         Aulas
                     </div>
                 </div>
-                <div className="col-md" style={{alignSelf: "center", paddingTop: "40px"}}>
+                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 4 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(4)}}>
                         Podcast
                     </div>
                 </div>
-                <div className="col-md" style={{alignSelf: "center", paddingTop: "40px"}}>
+                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "40px"}}>
                     <div className={this.state.selectedPage === 5 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(5)}}>
                         Contato
                     </div>
