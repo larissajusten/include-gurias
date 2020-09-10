@@ -24,7 +24,7 @@ export default class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className={"col-md-12"} style={{background: "rgba(255, 243, 221, 0.54)", height:"700px"}}>
+                        <div className={"col-md-12"} style={{background: "rgba(255, 243, 221, 0.54)"}}>
                             <div className= {styles.titleGlossary + " text-center"}>
                                 GLOSSÁRIO
                             </div>
@@ -53,44 +53,48 @@ export default class Home extends Component {
                                 </div>
                             </div>  
                         </div>
-                        <div className= "row">
-                            <div className={"col-md-12 text-center"} style={{background: "white", height: "680px"}}>
-                                <div className= {styles.titleCredits + " text-center user-select-none"}>
-                                    CRÉDITOS
+                        <div className={"col-md-12 text-center"} style={{background: "white"}}>
+                            <div className= {styles.titleCredits + " text-center user-select-none"}>
+                                CRÉDITOS
+                            </div>
+                            <div className= "row" style={{paddingBottom:"50px "}}>
+                                <div className= "col-md-4 ">
+                                    <div className="row  justify-content-center">
+                                        <div className= {styles.imgCredits + " user-select-none"}>
+
+                                        </div>
+                                    </div>
+                                    <div className= {styles.nameCredits + " text-center user-select-none"}>
+                                        Fabrícia Damando Santos
+                                    </div>
+                                    <div className= {styles.functionCredits + " text-center user-select-none"}>
+                                        Coordenadora
+                                    </div>
                                 </div>
-                                <div className= "row" style={{backgroundColor:"white", paddingBottom:"50px "}}>
-                                    <div className= "col-md-4 text-center ">
-                                        <div className= {styles.imgCredits + " text-center user-select-none"}>
+                                <div className= "col-md-4 text-center">
+                                    <div className="row  justify-content-center">
+                                        <div className= {styles.imgCredits + " user-select-none"}>
 
-                                        </div>
-                                        <div className= {styles.nameCredits + " text-center user-select-none"}>
-                                            Fabrícia Damando Santos
-                                        </div>
-                                        <div className= {styles.functionCredits + " text-center user-select-none"}>
-                                            Coordenadora
                                         </div>
                                     </div>
-                                    <div className= "col-md-4 text-center ">
-                                        <div className= {styles.imgCredits + " text-center user-select-none"}>
+                                    <div className= {styles.nameCredits + " text-center user-select-none"}>
+                                        Luana Sperling Santana
+                                    </div>
+                                    <div className= {styles.functionCredits + " text-center user-select-none"}>
+                                        Arte e Design
+                                    </div>
+                                </div>
+                                <div className= "col-md-4 text-center">
+                                    <div className="row  justify-content-center">
+                                        <div className= {styles.imgCredits + " user-select-none"}>
 
-                                        </div>
-                                        <div className= {styles.nameCredits + " text-center user-select-none"}>
-                                            Luana Sperling Santana
-                                        </div>
-                                        <div className= {styles.functionCredits + " text-center user-select-none"}>
-                                            Arte e Design
                                         </div>
                                     </div>
-                                    <div className= "col-md-4 text-center ">
-                                        <div className= {styles.imgCredits + " text-center user-select-none"}>
-
-                                        </div>
-                                        <div className= {styles.nameCredits + " text-center user-select-none"}>
-                                            Michele Liese da Silva
-                                        </div>
-                                        <div className= {styles.functionCredits + " text-center user-select-none"}>
-                                            Desenvolvedora
-                                        </div>
+                                    <div className= {styles.nameCredits + " text-center user-select-none"}>
+                                        Michele Liese da Silva
+                                    </div>
+                                    <div className= {styles.functionCredits + " text-center user-select-none"}>
+                                        Desenvolvedora
                                     </div>
                                 </div>
                             </div>
