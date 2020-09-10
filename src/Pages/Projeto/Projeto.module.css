@@ -1,3 +1,149 @@
 .background{
     width: 100vw;
 }
+
+.titleWhoweare{
+    position: absolute;
+    top: 107px;
+    left: -38px;
+    bottom: 489px;
+    
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 84px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+
+    color: #CC3366;
+}
+
+.whoweare{
+    padding-left: 33px;
+    padding-right: 37px;
+    padding-top: 230px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 56px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    
+    color: #CC3366;
+}
+
+.presentationWhoweare{
+    padding-left: 33px;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 113px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+
+    color: #222120;
+}
+
+.titleGlossary{
+    padding-top: 89px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 84px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+
+    color: #CC3366;
+}
+
+.subTitleGlossary{
+    background-color: green;
+    margin-top: 5px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+
+    color: #CC3366;
+}
+
+.glossary{
+    background-color: indigo;
+    margin-left: 2px;
+    margin-top: 5px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #222120;
+}
+
+
+.titleCredits{
+    padding-top: 89px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 84px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+
+    color: #CC3366;
+}
+
+.nameCredits{
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #222120;
+}
+
+.functionCredits{
+    padding-bottom: 10px;
+
+    font-family: Bellerose;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #CC3366;
+}
+
+.imgCredits{
+    bottom: 23.38%;
+    border-radius: 250px;
+    height: 280px;
+    width: 280px;
+    
+    margin-top: 50px;
+
+    background: #C4C4C4;
+}

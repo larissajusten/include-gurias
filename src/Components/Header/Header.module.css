@@ -1,22 +1,24 @@
 .header{
-    background: #E5E5E5;
+    background: white;
 }
 
 .logo{
+    margin-left: 81px;
     height: 145px;
     width: 160px;
     padding: 25px;
+    image-orientation: 
 }
 
 .buttonHeaderSelected{
     font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #cc3366d7;
-    font-weight: 500;
+    color: white;
+    background-color: #CC3366;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 15px;
+    font-weight: 300;
     font-size: 31px;
-    background-color: rgb(247, 217, 217);
     text-align: center;
     border-radius: 70px;
     cursor: default;
@@ -28,7 +30,7 @@
     font-weight: 500;
     font-size: 23.5px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 70px;
 }
 
 .buttonHeaderNotSelected:hover{
@@ -39,8 +41,8 @@
     color: #CC3366;
     font-weight: 500;
     font-size: 31px;
-    background-color: rgb(235, 222, 222);
+    background-color: #f8e8eede;;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 70px;
     cursor: pointer;
 }
