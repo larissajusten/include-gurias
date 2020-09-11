@@ -24,77 +24,85 @@ export default class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className={"col-md-12"} style={{background: "rgba(255, 243, 221, 0.54)"}}>
-                            <div className= {styles.titleGlossary + " text-center"}>
-                                GLOSSÁRIO
+                        <div className="row">
+                            <div className={"col-md-12 text-center"} style={{background: "rgba(255, 243, 221, 0.54)", height:"680px"}}>
+                                <div className= {styles.titleGlossary + " text-center user-select-none"}>
+                                    GLOSSÁRIO
+                                </div>
+                                <div className= "row" style={{paddingBottom:"50px "}}>
+                                    <div className= "col-md-12 text-center">
+                                        <div className= "row" style={{paddingTop: "50px", paddingLeft: "600px"}}>
+                                            <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
+                                                Include:
+                                            </div>
+                                            <div className= {styles.glossary + " text-left user-select-none"}>
+                                                Termo utilizado na programação para incluir um arquivo em seu projeto. Pode ser uma biblioteca ou um outro arquivo de código fonte.        
+                                            </div>
+                                        </div>
+                                        <div className= "row" style={{paddingTop: "10px", paddingLeft: "600px", paddingRight: "850px"}}>
+                                            <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
+                                                STEM:
+                                            </div>
+                                            <div className= {styles.glossary + " text-left user-select-none"}>
+                                                É um termo em inglês usado para designar o campo do conhecimento compogsto por Ciências, Tecnologia, Engenharia e Matemática (Science, Technology, Engineering and Mathematics).    
+                                            </div>     
+                                        </div>
+                                        <div className= "row" style={{paddingTop: "10px", paddingLeft: "600px"}}>
+                                            <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
+                                                Pensamento Lógico Computacional:
+                                            </div>
+                                            <div className= {styles.glossary + " text-left user-select-none"}>
+                                                Processo de pensamento envolvido na formulação de um problema e na expressão de sua solução.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>
-                            <div className= "row justify-content-start" style={{paddingTop: "50px"}}>
-                                <div className= {styles.subTitleGlossary + " text-right col-md-4"}>
-                                    Include:
-                                </div>
-                                <div className= {styles.glossary + " text-left col-md-6"}>
-                                    Termo utilizado na programação para incluir um arquivo em seu projeto. Pode ser uma biblioteca ou um outro arquivo de código fonte.        
-                                </div>
-                            </div>
-                            <div className= "row justify-content-start" style={{paddingTop: "10px"}}>
-                                <div className= {styles.subTitleGlossary + " text-right col-md-4"}>
-                                    STEM:
-                                </div>
-                                <div className= {styles.glossary + " text-left col-md-6"}>
-                                    É um termo em inglês usado para designar o campo do conhecimento composto por Ciências, Tecnologia, Engenharia e Matemática (Science, Technology, Engineering and Mathematics).    
-                                </div>     
-                            </div>
-                            <div className= "row justify-content-start" style={{paddingTop: "10px"}}>
-                                <div className= {styles.subTitleGlossary + " text-right col-md-6"}>
-                                    Pensamento Lógico Computacional:
-                                </div>
-                                <div className= {styles.glossary + " text-left col-md-4"}>
-                                    Processo de pensamento envolvido na formulação de um problema e na expressão de sua solução.
-                                </div>
-                            </div>  
                         </div>
-                        <div className={"col-md-12 text-center"} style={{background: "white"}}>
-                            <div className= {styles.titleCredits + " text-center user-select-none"}>
-                                CRÉDITOS
-                            </div>
-                            <div className= "row" style={{paddingBottom:"50px "}}>
-                                <div className= "col-md-4 ">
-                                    <div className="row  justify-content-center">
-                                        <div className= {styles.imgCredits + " user-select-none"}>
-
-                                        </div>
-                                    </div>
-                                    <div className= {styles.nameCredits + " text-center user-select-none"}>
-                                        Fabrícia Damando Santos
-                                    </div>
-                                    <div className= {styles.functionCredits + " text-center user-select-none"}>
-                                        Coordenadora
-                                    </div>
+                        <div className= "row">
+                            <div className={"col-md-12 text-center"} style={{background: "white"}}>
+                                <div className= {styles.titleCredits + " text-center user-select-none"}>
+                                    CRÉDITOS
                                 </div>
-                                <div className= "col-md-4 text-center">
-                                    <div className="row  justify-content-center">
-                                        <div className= {styles.imgCredits + " user-select-none"}>
+                                <div className= "row" style={{paddingBottom:"50px "}}>
+                                    <div className= "col-md-4 ">
+                                        <div className="row  justify-content-center">
+                                            <div className= {styles.imgCredits + " user-select-none"}>
 
+                                            </div>
+                                        </div>
+                                        <div className= {styles.nameCredits + " text-center user-select-none"}>
+                                            Fabrícia Damando Santos
+                                        </div>
+                                        <div className= {styles.functionCredits + " text-center user-select-none"}>
+                                            Coordenadora
                                         </div>
                                     </div>
-                                    <div className= {styles.nameCredits + " text-center user-select-none"}>
-                                        Luana Sperling Santana
-                                    </div>
-                                    <div className= {styles.functionCredits + " text-center user-select-none"}>
-                                        Arte e Design
-                                    </div>
-                                </div>
-                                <div className= "col-md-4 text-center">
-                                    <div className="row  justify-content-center">
-                                        <div className= {styles.imgCredits + " user-select-none"}>
+                                    <div className= "col-md-4 text-center">
+                                        <div className="row  justify-content-center">
+                                            <div className= {styles.imgCredits + " user-select-none"}>
 
+                                            </div>
+                                        </div>
+                                        <div className= {styles.nameCredits + " text-center user-select-none"}>
+                                            Luana Sperling Santana
+                                        </div>
+                                        <div className= {styles.functionCredits + " text-center user-select-none"}>
+                                            Arte e Design
                                         </div>
                                     </div>
-                                    <div className= {styles.nameCredits + " text-center user-select-none"}>
-                                        Michele Liese da Silva
-                                    </div>
-                                    <div className= {styles.functionCredits + " text-center user-select-none"}>
-                                        Desenvolvedora
+                                    <div className= "col-md-4 text-center">
+                                        <div className="row  justify-content-center">
+                                            <div className= {styles.imgCredits + " user-select-none"}>
+
+                                            </div>
+                                        </div>
+                                        <div className= {styles.nameCredits + " text-center user-select-none"}>
+                                            Michele Liese da Silva
+                                        </div>
+                                        <div className= {styles.functionCredits + " text-center user-select-none"}>
+                                            Desenvolvedora
+                                        </div>
                                     </div>
                                 </div>
                             </div>
