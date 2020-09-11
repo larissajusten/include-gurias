@@ -25,13 +25,13 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className={"col-md-12 text-center"} style={{background: "rgba(255, 243, 221, 0.54)", height:"680px"}}>
+                            <div className={"col-md-12 text-center"} style={{background: "rgba(255, 243, 221, 0.54)", paddingBottom:"140px"}}>
                                 <div className= {styles.titleGlossary + " text-center user-select-none"}>
                                     GLOSSÁRIO
                                 </div>
                                 <div className= "row" style={{paddingBottom:"50px "}}>
                                     <div className= "col-md-12 text-center">
-                                        <div className= "row" style={{paddingTop: "50px", paddingLeft: "600px"}}>
+                                        <div className= "row" style={{paddingTop: "100px", paddingLeft: "450px", paddingRight: "300px"}}>
                                             <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
                                                 Include:
                                             </div>
@@ -39,7 +39,7 @@ export default class Home extends Component {
                                                 Termo utilizado na programação para incluir um arquivo em seu projeto. Pode ser uma biblioteca ou um outro arquivo de código fonte.        
                                             </div>
                                         </div>
-                                        <div className= "row" style={{paddingTop: "10px", paddingLeft: "600px", paddingRight: "850px"}}>
+                                        <div className= "row" style={{paddingLeft: "450px", paddingRight: "300px"}}>
                                             <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
                                                 STEM:
                                             </div>
@@ -47,7 +47,7 @@ export default class Home extends Component {
                                                 É um termo em inglês usado para designar o campo do conhecimento compogsto por Ciências, Tecnologia, Engenharia e Matemática (Science, Technology, Engineering and Mathematics).    
                                             </div>     
                                         </div>
-                                        <div className= "row" style={{paddingTop: "10px", paddingLeft: "600px"}}>
+                                        <div className= "row" style={{paddingTop: "10px", paddingLeft: "450px", paddingRight: "300px"}}>
                                             <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
                                                 Pensamento Lógico Computacional:
                                             </div>
@@ -68,7 +68,7 @@ export default class Home extends Component {
                                     <div className= "col-md-4 ">
                                         <div className="row  justify-content-center">
                                             <div className= {styles.imgCredits + " user-select-none"}>
-
+                                                
                                             </div>
                                         </div>
                                         <div className= {styles.nameCredits + " text-center user-select-none"}>
@@ -94,7 +94,7 @@ export default class Home extends Component {
                                     <div className= "col-md-4 text-center">
                                         <div className="row  justify-content-center">
                                             <div className= {styles.imgCredits + " user-select-none"}>
-
+                                                
                                             </div>
                                         </div>
                                         <div className= {styles.nameCredits + " text-center user-select-none"}>
