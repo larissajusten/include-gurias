@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import image from "../images/Tentativa44.png";
+import image from "../../images/Tentativa44.png";
 import styles from './Header.module.css';
 
 export default class Header extends Component {

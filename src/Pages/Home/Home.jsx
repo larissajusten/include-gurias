@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import styles from './Home.module.css';
-import image from "../../Components/images/DesignHome.png";
-import facebook from "../../Components/images/facebook.png";
-import instagram from "../../Components/images/instagram.png";
-import linkedin from "../../Components/images/linkedin.png";
-import youtube from "../../Components/images/youtube.png";
+import image from "../../images/DesignHome.png";
+import facebook from "../../images/facebook.png";
+import instagram from "../../images/instagram.png";
+import linkedin from "../../images/linkedin.png";
+import youtube from "../../images/youtube.png";
 export default class Home extends Component {
 
     goToNewTab = (link) => {
