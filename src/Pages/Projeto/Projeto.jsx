@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styles from './Projeto.module.css';
+import imgMichele from "../../Components/images/michele.jpg";
 
 export default class Home extends Component {
     
@@ -93,9 +94,7 @@ export default class Home extends Component {
                                     </div>
                                     <div className= "col-md-4 text-center">
                                         <div className="row  justify-content-center">
-                                            <div className= {styles.imgCredits + " user-select-none"}>
-                                                
-                                            </div>
+                                            <img src={imgMichele} className={styles.imgCredits} alt="Michele Liese"/>
                                         </div>
                                         <div className= {styles.nameCredits + " text-center user-select-none"}>
                                             Michele Liese da Silva
