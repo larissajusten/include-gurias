@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import styles from './Projeto.module.css';
-import imageFabricia from "../../images/facebook.png";
-import imageLuana from "../../images/facebook.png";
-import imageMichele from "../../images/facebook.png";
+import imgFabricia from "../../images/fabricia.jpeg";
+import imgMichele from "../../images/michele.jpg";
+import imgLuana from "../../images/luana.jpeg";
 
 export default class Home extends Component {
     
@@ -50,7 +50,7 @@ export default class Home extends Component {
                                                 É um termo em inglês usado para designar o campo do conhecimento composto por Ciências, Tecnologia, Engenharia e Matemática (Science, Technology, Engineering and Mathematics).    
                                             </div>     
                                         </div>
-                                        <div className= "row" style={{paddingTop: "10px", paddingLeft: "450px", paddingRight: "300px"}}>
+                                        <div className= "row" style={{paddingLeft: "450px", paddingRight: "300px"}}>
                                             <div className= {styles.subTitleGlossary + " text-center user-select-none"}>
                                                 Pensamento Lógico Computacional:
                                             </div>
@@ -67,10 +67,10 @@ export default class Home extends Component {
                                 <div className= {styles.titleCredits + " text-center user-select-none"}>
                                     CRÉDITOS
                                 </div>
-                                <div className= "row" style={{paddingBottom:"50px ", paddingTop:"100px"}}>
+                                <div className= "row" style={{paddingBottom:"50px ", paddingTop: "68px"}}>
                                     <div className= "col-md-4 ">
                                         <div className="row  justify-content-center">
-                                            <img src={imageFabricia} height="300px" width="300px" alt="Include Gurias"/>
+                                            <img src={imgFabricia} className={styles.imgCredits} alt="Fabricia Damando"/>
                                         </div>
                                         <div className= {styles.nameCredits + " text-center user-select-none"}>
                                             Fabrícia Damando Santos
@@ -81,7 +81,7 @@ export default class Home extends Component {
                                     </div>
                                     <div className= "col-md-4 text-center">
                                         <div className="row  justify-content-center">
-                                            <img src={imageLuana} height="300px" width="300px" alt="Include Gurias"/> 
+                                            <img src={imgLuana} className={styles.imgCredits} alt="Luana Sperling"/> 
                                         </div>
                                         <div className= {styles.nameCredits + " text-center user-select-none"}>
                                             Luana Sperling Santana
@@ -92,7 +92,7 @@ export default class Home extends Component {
                                     </div>
                                     <div className= "col-md-4 text-center">
                                         <div className="row  justify-content-center">
-                                            <img src={imageMichele} height="300px" width="300px" alt="Include Gurias"/>
+                                            <img src={imgMichele} className={styles.imgCredits} alt="Michele Liese"/>
                                         </div>
                                         <div className= {styles.nameCredits + " text-center user-select-none"}>
                                             Michele Liese da Silva

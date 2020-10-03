@@ -67,7 +67,7 @@ export default class Header extends Component {
                 <div className="col-md-3 text-left"> 
                     <img src={image} className={styles.logo} alt="Include Gurias"/>
                 </div>
-                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>
+                <div className="col-md user-select-none " style={{alignSelf: "center", paddingTop: "20px"}}>
                     <div className={this.state.selectedPage === 0 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected} onClick={()=>{this.onClick(0)}}> 
                         Home 
                     </div>
@@ -83,9 +83,17 @@ export default class Header extends Component {
                     </div>
                 </div>
                 <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>
-                    <div className={this.state.selectedPage === 3 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(3)}}>
-                        Aulas
-                    
+                    <div className= {this.state.selectedPage === 3 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>
