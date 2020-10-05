@@ -83,11 +83,11 @@ export default class Header extends Component {
                     </div>
                 </div>
                 <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>
-                    <div className= {this.state.selectedPage === 3 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </button>
+                    <div class="dropdown">
+                        <div className= {this.state.selectedPage === 3 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}>
+                            <div class="btn dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">
+                                Aulas
+                            </div>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button class="dropdown-item" type="button">Action</button>
                                 <button class="dropdown-item" type="button">Another action</button>
