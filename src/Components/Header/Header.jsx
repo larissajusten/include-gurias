@@ -8,15 +8,24 @@ export default class Header extends Component {
     
         this.state = {
             selectedPage: 0,
-            currentPage: 0
+            currentPage: 0,
+            showIten: false,
         };
 
         this.onClick = this.onClick.bind(this);
     }
 
+    showItens = ()=>{
+        this.setState({
+            showIten: !this.state.showIten,
+            selectedPage: 8,
+        })
+    }
+
     onClick = (index) => {
         this.setState({
-            selectedPage: index
+            selectedPage: index,
+            showIten: false,
         });
 
         this.props.trocaPagina(index);
@@ -83,15 +92,15 @@ export default class Header extends Component {
                     </div>
                 </div>
                 <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>
-                    <div className={this.state.selectedPage === 3 ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={()=>{this.onClick(3)}}>            
-                        <div class="dropdown">
-                            <div class="dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">
+                    <div className={this.state.showIten === true ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={this.showItens}>            
+                        <div className="btn-group">
+                            <div className="dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">
                                 Aulas
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-item" type="button">Scratch</div>
-                                    <div class="dropdown-item" type="button">Gibis</div>
-                                    <div class="dropdown-item" type="button">Code.org</div>
-                                </div>
+                                <ul className="dropdown-menu">
+                                    <li className={styles.scratch} type="button">Scratch</li>
+                                    <li className={styles.gibis} type="button">Gibis</li>
+                                    <li className={styles.codeOrg} type="button">Code.org</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
