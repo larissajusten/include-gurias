@@ -91,17 +91,17 @@ export default class Header extends Component {
                         Representatividade
                     </div>
                 </div>
-                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>
-                    <div className={this.state.showIten === true ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected}onClick={this.showItens}>            
-                        <div className="btn-group">
-                            <div className="dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">
-                                Aulas
-                                <ul className="dropdown-menu">
-                                    <li className={styles.scratch} type="button">Scratch</li>
-                                    <li className={styles.gibis} type="button">Gibis</li>
-                                    <li className={styles.codeOrg} type="button">Code.org</li>
-                                </ul>
-                            </div>
+                <div className="col-md user-select-none" style={{alignSelf: "center", paddingTop: "20px"}}>    
+                    <div className={(this.state.showIten === true ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected) + "dropdown"} 
+                        id="dropdownMenu" data-toggle="dropdown" onClick={this.showItens}>
+                        <button className={(this.state.showIten === true ? styles.buttonHeaderSelected : styles.buttonHeaderNotSelected) + " dropdown-toggle"} 
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Aulas
+                        </button>
+                        <div className={"dropdown-menu " + (styles.dropdownAulas)}>
+                            <button className={"dropdown-item " + (styles.scratch)} type="button" onClick={()=>{console.log("Funcionou c:")}}>Scratch</button>
+                            <button className={"dropdown-item " + (styles.gibis)} type="button" onClick={()=>{this.onClick(1)}}>Gibis</button>
+                            <button className={"dropdown-item " + (styles.codeOrg)} type="button">Code.org</button>
                         </div>
                     </div>
                 </div>

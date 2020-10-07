@@ -21,15 +21,26 @@
     text-align: center;
     border-radius: 70px;
     cursor: default;
+    outline: none;
+    border-style: hidden;
 }
 
 .buttonHeaderNotSelected{
     font-family: Bellerose Light;
     color: #CC3366;
+    background: none;
     font-weight: 500;
     font-size: 23.5px;
     text-align: center;
     border-radius: 70px;
+    outline: none;
+    border-color: unset;
+    box-shadow: none;
+    border-style: hidden;
+}
+
+.buttonHeaderNotSelected:focus, .buttonHeaderSelected:focus {
+    outline: none;
 }
 
 .buttonHeaderNotSelected:hover{
@@ -46,77 +57,68 @@
     cursor: pointer;
 }
 
-.scratch{
-    font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #f5601b;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 70px;
-    cursor: pointer;
-}
-.scratch:hover{
-    font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #f5601b;
-    font-size: 31px;
-    background-color: #f8e8eede;;
-    text-align: center;
-    border-radius: 70px;
-    cursor: pointer;
+.dropdownAulas {
+    background-color: #CC3366 !important;
+    border: none !important;
 }
 
+.scratch, .scratch:hover { 
+    font-family: Bellerose Light !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 25px !important;
+    color: #f5601b !important;
+    text-align: center !important;
+    border-radius: 70px !important;
+    cursor: pointer !important;
+}
+
+.scratch{
+    font-size: 20px !important;
+}
+
+.scratch:hover{
+    font-size: 31px !important;
+    background-color: #f8e8eede !important;
+}
+
+.gibis, .gibis:hover {
+    font-family: Bellerose Light !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 25px !important;
+    text-align: center !important;
+    border-radius: 70px !important;
+    cursor: pointer !important;
+}
 
 .gibis{
-    font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #0bff17;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 70px;
-    cursor: pointer;
+    color: #0bff17 !important;
+    font-size: 20px !important;
 }
 
 .gibis:hover{
-    font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #33ccc4;
-    font-size: 31px;
-    background-color: #f8e8eede;;
-    text-align: center;
-    border-radius: 70px;
-    cursor: pointer;
+    color: #33ccc4 !important;
+    font-size: 31px !important;
+    background-color: #f8e8eede !important;
+}
+
+.codeOrg, .codeOrg:hover {
+    font-family: Bellerose Light !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 25px !important;
+    color: #3134f3 !important;
+    text-align: center !important;
+    border-radius: 70px !important;
+    cursor: pointer !important;
 }
 
 .codeOrg{
-    font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #3134f3;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 70px;
-    cursor: pointer;
+    font-size: 20px !important;
 }
 
 .codeOrg:hover{
-    font-family: Bellerose Light;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    color: #3134f3;
     font-size: 31px;
-    background-color: #f8e8eede;;
-    text-align: center;
-    border-radius: 70px;
-    cursor: pointer;
+    background-color: #f8e8eede !important;
 }
